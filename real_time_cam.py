@@ -11,7 +11,7 @@ def translate(img, model):
     gray = gray.reshape(gray.shape[0], 28, 28, 1)
     y = model.predict(gray)
     cols = y.shape[1]
-    print(cols, len(alfabet))
+    print(y)
     for i in range(cols):
         if y[0,i] > 0.98:
            return alfabet[i]
@@ -40,8 +40,7 @@ def show_webcam(model,mirror = False):
 
 
 def main():
-    model = load_model('./savedmodel/SignLanguageModel.h5')
-    show_webcam(model,mirror=True)
-if __name__ == '__main__':
-    	main()
+    #model = load_model('./savedmodel/SignLanguageModel.h5')
+    #show_webcam(model,mirror=True)
+
 
