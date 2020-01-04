@@ -1,0 +1,1 @@
+download the precomputed model h5 file (120MB) from this link <https://drive.google.com/open?id=1lTZdJRL0k8Mk-ptAInDvQibTwgGPKPDV> and save it in the current folder
